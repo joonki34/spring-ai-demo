@@ -17,9 +17,10 @@ java {
 repositories {
 	mavenCentral()
 	maven { url = uri("https://repo.spring.io/milestone") }
+	maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springAiVersion"] = "1.0.0-M1"
+extra["springAiVersion"] = "1.0.0-SNAPSHOT"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -27,6 +28,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
+	implementation("io.github.oshai:kotlin-logging-jvm:5.0.1")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")

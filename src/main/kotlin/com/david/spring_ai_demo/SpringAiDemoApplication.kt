@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SpringAiDemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpringAiDemoApplication>(*args)
+    runApplication<SpringAiDemoApplication>(*args)
 }
